@@ -7,8 +7,11 @@ This project implements a real-time chat application using FastAPI, WebSocket, a
 Installation
 
 Install the required dependencies:
+
 Linux: python3 -m venv env
+
 source env/bin/activate
+
 pip install fastapi tortoise-orm python-socketio uvicorn fastapi.middleware.cors pytest starlette websocket
 
 bash
@@ -18,7 +21,9 @@ Running the Server
 Start the server by running:
 
 bash
+
 source env/bin/activate
+
 uvicorn main:app --host 0.0.0.0 --port 8000
 
 Functionality
@@ -40,6 +45,7 @@ Functionality
 Database Setup
 
 The application uses a SQLite database. The database file db.sqlite3 will be created in the project directory upon initialization.
+
 Additional Notes
 
     CORS Middleware: Enables cross-origin resource sharing to allow requests from any origin.
